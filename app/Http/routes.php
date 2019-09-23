@@ -16,6 +16,13 @@ Route::get('/', [
 	'uses'=>'PagesControlleur@home'
 ]);
 
+
+Route::get('about', [
+	'as'=>'about',
+	'uses'=>'PagesControlleur@about'
+]);
+
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

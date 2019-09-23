@@ -82,7 +82,13 @@ class PagesControlleur extends Controller {
 	}
 	public function home()
 	{
-		return view('Pages/index');
+		return view('Pages/index',['title'=>'Home']);
+	}
+	public function about()
+	{
+
+		dd('about page');
+		//return view('Pages/index');
 	}
 
 }
