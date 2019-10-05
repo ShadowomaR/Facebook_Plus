@@ -22,6 +22,16 @@ Route::get('about', [
 	'uses'=>'PagesControlleur@about'
 ]);
 
+Route::get('Getstart', [
+	'as'=>'Getstart',
+	'uses'=>'PagesControlleur@Getstart'
+]);
+
+Route::post('contact', [
+	'as'=>'contact',
+	'uses'=>'Contact_controlleur@store'
+]);
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

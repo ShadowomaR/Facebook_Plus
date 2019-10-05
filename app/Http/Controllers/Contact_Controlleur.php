@@ -2,10 +2,10 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use App\Http\Requests\Contact_usRequest;
 use Illuminate\Http\Request;
 
-class PagesControlleur extends Controller {
+class Contact_Controlleur extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -32,9 +32,9 @@ class PagesControlleur extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Contact_usRequest $Request)
 	{
-		//
+		dd('stor contact',$Request->email);
 	}
 
 	/**
@@ -79,23 +79,6 @@ class PagesControlleur extends Controller {
 	public function destroy($id)
 	{
 		//
-	}
-	public function home()
-	{
-		return view('Pages/index',['title'=>'Home']);
-	}
-	public function about()
-	{
-		return view('Pages/About',['title'=>'About']);
-	}
-	public function Getstart()
-	{
-		return view('Pages/Join',['title'=>'Join us']);
-	}
-
-	public function contact()
-	{
-		return dd('contact');
 	}
 
 }

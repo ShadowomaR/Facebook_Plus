@@ -11,6 +11,10 @@
 .trans{
   background: transparent !important;
 }
+
+.active{
+  color: cyan !important
+}
 /*      offer cards       */
 
 .offer .card .card-header{
@@ -79,14 +83,22 @@
   text-decoration: none;
   color: black
 }
+/*    more    */
+.more{
+  background: rgb(221, 156, 17);
+  color:black;
+  padding: 4px 0;
+}
+.more a{
+  text-decoration: none;
+}
 /*      footer     */
-
 .footer{
   color: rgb(255, 255, 255);
   background: rgb(37, 57, 170)
 }
 .footer .copy{
-  background: rgb(68, 67, 71)
+  background: rgb(50, 50, 51)
 }
 .footer .link{
   display: block;
@@ -96,20 +108,14 @@
 .footer .link:hover{
   color: black;
 }
-.more{
-  background: rgb(221, 156, 17);
-  color:black;
-  padding: 4px 0;
-}
-.more a{
-  text-decoration: none;
+
+.footer .social-networks{	
+  text-align: center;	
+  padding-top: 30px;	
+  padding-bottom: 30px;
 }
 
-
-
-.footer .social-networks{	text-align: center;	padding-top: 30px;	padding-bottom: 30px;}
-
-.footer {	background-color: rgba(55, 58, 72,.6);	color:white;}
+.footer {	background-color: rgba(55, 58, 72,.8);	color:white;}
 
 .footer .footer-copyright{
 	background-color: rgba(4,1,64,1);
@@ -119,6 +125,8 @@
 }
 
 .footer .footer-copyright p{	margin:10px;	color: #ccc;}
+
+.footer .footer-copyright a{  color: #ef1a1a}
 
 .footer ul{list-style-type: none;padding-left: 0; line-height: 1.7;}
 
@@ -149,5 +157,54 @@
 
 .footer .google:hover{color:#ef1a1a;}
 
-.footer .twitter:hover{color: #00aced;
+.footer .twitter:hover{color: #00aced;}
+
+/*         503       */
+
+.content {
+  text-align: center;
+  display: inline-block;
 }
+
+.content .title {
+  font-size: 72px;
+  margin-bottom: 40px;
+}
+
+/*          sign-up      */
+.join {
+  background-image:url("/images/facebook.jpg");
+}
+
+.submit{
+  background: rgb(221, 156, 17);
+  position: relative;
+  float:right;
+	border-radius:2px;
+  box-shadow:0 0 3px rgb(255, 255, 255);
+  top: -25px;
+  right: -30px;
+  padding: 10px 4px
+}
+
+.sign-up{
+  /*background-image: radial-gradient(circle, #0c1372 0%, #52d7ee 80%);*/
+  padding: 2rem
+}
+
+.sign-up fieldset {
+	border:1px solid rgb(255, 255, 255);
+	border-radius:8px;
+  box-shadow:0 0 7px rgb(0, 0, 0);
+  color: white;
+  background:rgba(20, 22, 151, 0.7)
+}
+.sign-up legend {
+  background:transparent;
+  text-align: center;
+  
+}
+.form-check-label a{
+  color: #ef1a1a
+}
+/*          sign-in      */

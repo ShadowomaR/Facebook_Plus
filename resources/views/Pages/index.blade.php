@@ -1,4 +1,4 @@
-@extends('layout.standar',['title'=>'Home'])
+@extends('layout.standar',['title'=>$title])
 
 @section('content')
 <div class="container-fluid m-0 p-0">
